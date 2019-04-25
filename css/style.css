@@ -162,7 +162,6 @@ video {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    /*align-items: center;*/
 }
 
 .screenshots_block figure {
@@ -304,7 +303,7 @@ video {
     font-size: 40px;
     font-weight: 400;
     line-height: 70px;
-    background-color: white;
+    background-color: #fff;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -320,20 +319,27 @@ video {
 }
 
 .buy-btn {
-    background-color: white;
+    background-color: #fff;
     width: 260px;
     height: 40px;
     color: #445161;
     font-family: "Arial - Bold MT";
     font-size: 18px;
     font-weight: 400;
-    line-height: 18px;
     text-transform: uppercase;
     margin: 20px;
-    border-radius: 5px;
+    border-radius: 7px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
 }
 
 .buy-btn:hover {
-    color: black;
-    background-color: #989898;
+    color: #fff;
+    background-color: #808080;
+}
+
+.buy-btn:active {
+    color: #445161;
+    background-color: #fff;
 }
