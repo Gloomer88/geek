@@ -3,11 +3,6 @@
     padding: 0;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 .container {
     width: 1280px;
     margin: 0 auto;
@@ -20,7 +15,6 @@ header {
 
 .text {
     float: left;
-    margin-top: 50px;
     margin-left: 50px;
     text-align: left;
 }
@@ -34,12 +28,12 @@ header {
     margin-bottom: 31px;
 }
 
-.text ul {
-    margin-left: 35px;
-}
-
 .text li {
-    list-style-image: url(img/check_icon.png);
+    list-style-type: none;
+    padding-left: 30px;
+    background-image: url("../img/check_icon.png");
+    background-position: left;
+    background-repeat: no-repeat;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
     color: #ffffff;
     font-family: "Arial MT";
@@ -59,7 +53,7 @@ header img {
 .top-video {
     float: left;
     width: 649px;
-    margin-top: 49px;
+    margin-top: 40px;
     margin-left: 50px;
     clear: both;
 }
@@ -154,36 +148,40 @@ video {
     left: -46px;
 }
 
-.scrinshots {
-    width: 100%;
-    height: 487px;
-    clear: both;
-}
-
-.scrinshots h1 {
+.screenshots h1 {
+    padding: 50px 0 30px 0;
+    text-align: center;
     color: #445161;
     font-family: "Arial MT";
     font-size: 30px;
     font-weight: 400;
     line-height: 36px;
-    text-align: center;
-    margin-top: 40px;
 }
 
-.scrinshot-figure img {
-    float: left;
-    margin-top: 35px;
-    margin-left: 50px;
+.screenshots_block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /*align-items: center;*/
 }
 
-.scrinshot-text {
-    float: right;
+.screenshots_block figure {
+    padding: 0 0 30px 0;
+    display: flex;
+}
+
+.screenshots_block p {
+    margin-left: 10px;
+    color: #333333;
+    font-family: "Arial MT";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
     width: 359px;
-    margin-right: 656px;
-    margin-top: 35px;
 }
 
-.scrinshot-text h2 {
+.screenshots_block h3 {
+    margin: 0 0 10px 10px;
     color: #445161;
     font-family: "Arial MT";
     font-size: 24px;
@@ -191,11 +189,151 @@ video {
     line-height: 30px;
 }
 
-.scrinshot-text p {
-    color: #333333;
+.reviews {
+    width: 100%;
+    background: #f5f5f5;
+}
+
+.reviews h1 {
+    padding: 50px 0 40px 0;
+    text-align: center;
+    color: #445161;
     font-family: "Arial MT";
-    font-size: 16px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.reviews_block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    align-content: center;
+}
+
+.reviews-txt {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.reviews-txt img {
+    border-radius: 50%;
+}
+
+.reviews-txt blockquote {
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #ebebeb;
+    margin: 0 0 10px 20px;
+    width: 460px;
+    position: relative;
+}
+
+.reviews-txt blockquote:before {
+    content: "";
+    border: 15px solid transparent;
+    border-right: 15px solid #ececec;
+    position: absolute;
+    top: 20px;
+    left: -30px;
+}
+
+.reviews-txt p {
+    width: 434px;
+    color: #333333;
+    font-family: "Arial - Italic MT";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.reviews-txt footer {
+    margin-top: 4px;
+    color: #989898;
+    font-family: "Arial MT";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.buy {
+    width: 100%;
+}
+
+.buy h1 {
+    margin: 50px;
+    text-align: center;
+    color: #445161;
+    font-family: "Arial MT";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.buy_block {
+    margin-bottom: 49px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.buy_child {
+    box-shadow: 0 0 3px 2px #425062;
+    background-color: #445162;
+    list-style-position: inside;
+    border-radius: 5px;
+}
+
+.buy-span {
+    display: block;
+    height: 50px;
+    color: #ffffff;
+    font-family: "Arial MT";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+}
+
+.price {
+    display: block;
+    height: 70px;
+    color: #445162;
+    font-family: "Arial MT";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 70px;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.buy_child li {
+    padding-left: 30px;
+    width: 242px;
+    font-family: "Arial MT";
+    font-size: 14px;
     font-weight: 400;
     line-height: 24px;
-    margin-top: 10px;
+    color: #ffffff;
+}
+
+.buy-btn {
+    background-color: white;
+    width: 260px;
+    height: 40px;
+    color: #445161;
+    font-family: "Arial - Bold MT";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.buy-btn:hover {
+    color: black;
+    background-color: #989898;
 }
