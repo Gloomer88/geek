@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <title>Макет</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -17,8 +20,7 @@
                     <li>Tell us about the advantages and merits</li>
                     <li>Associate the page with the payment system</li>
                 </ul>
-            </div> <img src="img/Header_img.png" alt="Header_img" width="469" height="214"> 
-        </header>
+            </div> <img src="img/Header_img.png" alt="Header_img" width="469" height="214"> </header>
         <main>
             <section class="top-video">
                 <h1>About your product</h1>
@@ -141,7 +143,29 @@
                     </div>
                 </div>
             </section>
+            <section class="contacts">
+                <h1>Contacts</h1>
+                <div class=contacts-flex>
+                    <form action="URL" class="contacts-form">
+                        <input type="text" placeholder=" Your name:" class="yourname">
+                        <input type="text" placeholder=" Your email:" class="youremail">
+                        <textarea name="textarea-contacts" id="textarea-contacts" placeholder=" Your message:" cols="30" rows="10"></textarea>
+                        <input type="submit" value="send" class="contacts-btn"> </form>
+                    <div></div>
+                    <div class="contacts-links">
+                        <a href="#"> <span class="contacts-links1"><i class="fab fa-skype fa-2x"></i> here_your_login_skype</span> </a>
+                        <a href="#"> <span class="contacts-links2"><i class="fab fa-telegram" style="font-size: 2em"></i> 27079595955</span> </a>
+                        <a href="#"> <span class="contacts-links3"><i class="far fa-envelope" style="font-size: 2em"></i> antoniarisotto@mail.com</span> </a>
+                        <a href="#"> <span class="contacts-links4"><i class="fas fa-phone" style="font-size: 2em"></i> +1 456 444 44 44</span> </a>
+                        <div class=contacts-links5> <a href="#"><i class="fab fa-twitter-square"></i></a> <a href="#"><i class="fab fa-facebook-square"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fab  fa-google"></i></a> <a href="#"><i class="fab fa-youtube"></i></a> </div>
+                    </div>
+                </div>
+            </section>
         </main>
+        <footer class="footer clearfix">
+            <p>Copyright&copy;2014 Product name - PSD HTML CSS</p>
+        </footer>
     </div>
 </body>
+
 </html>
