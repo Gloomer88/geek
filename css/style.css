@@ -325,7 +325,7 @@ video {
     color: #445161;
     font-family: "Arial - Bold MT";
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
     text-transform: uppercase;
     margin: 20px;
     border-radius: 7px;
@@ -342,4 +342,177 @@ video {
 .buy-btn:active {
     color: #445161;
     background-color: #fff;
+}
+
+.contacts {
+    background-color: #445162;
+    width: 100%;
+}
+
+.contacts-flex {
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.contacts h1 {
+    padding-top: 53px;
+    padding-bottom: 31px;
+    font-family: Arial sans-serif;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+}
+
+.contacts-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-btn {
+    width: 44px;
+    height: 12px;
+    color: #445161;
+    font-family: "Arial - Bold MT";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    width: 140px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-left: 190px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+.contacts-btn:hover {
+    color: #fff;
+    background-color: #808080;
+}
+
+.contacts-btn:active {
+    color: #445161;
+    background-color: #fff;
+}
+
+.yourname {
+    border-radius: 5px;
+    width: 500px;
+    height: 40px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    color: dimgray;
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+
+.youremail {
+    color: dimgray;
+    width: 500px;
+    height: 40px;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+
+#textarea-contacts {
+    color: dimgray;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    width: 500px;
+    height: 170px;
+    border-radius: 5px;
+    margin-top: 30px;
+    resize: none;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.contacts-links div {
+    padding-bottom: 20px;
+}
+
+.contacts-links {
+    margin-left: 50px;
+    width: 300px;
+}
+
+.contacts-links a {
+    text-decoration: none;
+    height: 40px;
+    color: #ffffff;
+    font-family: "Arial MT";
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+}
+
+.contacts-links1 {
+    display: block;
+}
+
+.contacts-links2 {
+    display: block;
+    margin-top: 5px;
+}
+
+.contacts-links3 {
+    display: block;
+    margin-top: 5px;
+}
+
+.contacts-links4 {
+    display: block;
+    margin-top: 5px;
+}
+
+.contacts-links5 {
+    display: flex;
+    background-image: url(../img/social_buttons.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 1px;
+    height: 50px;
+    margin-right: 55px;
+    width: 240px;
+}
+
+.contacts-links5 a {
+    margin-top: 30px;
+    display: block;
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+    font-size: 40px;
+}
+
+.footer {
+    width: 100%;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p {
+    margin: auto;
+    font-family: Arial;
+    color: #445162;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 24px;
 }
